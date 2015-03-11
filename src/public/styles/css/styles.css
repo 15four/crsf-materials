@@ -607,10 +607,54 @@ html {
   float: left;
   box-sizing: border-box;
 }
+.material_category .material_category_header:hover {
+  cursor: pointer;
+}
+.material_category .material_category_header_icon {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 38px;
+  height: 38px;
+}
+.material_category .material_category_header_icon:before, .material_category .material_category_header_icon:after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 2px;
+  background: #aaa;
+  border-radius: 6px;
+}
+.material_category .material_category_header_icon:before {
+  -webkit-transform: rotate(45deg) translate(-6px, 6px);
+      -ms-transform: rotate(45deg) translate(-6px, 6px);
+          transform: rotate(45deg) translate(-6px, 6px);
+}
+.material_category .material_category_header_icon:after {
+  -webkit-transform: rotate(-45deg) translate(3px, 3px);
+      -ms-transform: rotate(-45deg) translate(3px, 3px);
+          transform: rotate(-45deg) translate(3px, 3px);
+}
+.material_category .material_category_header_icon.close:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.material_category .material_category_header_icon.close:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 .material_category .material_category_list {
   border-top: 1px solid #ccc;
   padding: 32px 32px 32px 48px;
   margin: 0;
+  display: none;
+}
+.material_category .material_category_list.material_category_list--show {
+  display: block;
 }
 .material_category .material_category_list li {
   line-height: 16px;
@@ -620,6 +664,5 @@ html {
           transition: 0.15s;
 }
 .material_category .material_category_list li a:hover, .material_category .material_category_list li a:active, .material_category .material_category_list li a:focus {
-  text-decoration: underline;
   color: #FF7812;
 }
