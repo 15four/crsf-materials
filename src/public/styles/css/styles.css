@@ -601,8 +601,11 @@ html {
   padding: 32px 32px 16px;
 }
 .material_category .material_category_header img {
-  padding-right: 16px;
+  width: 65px;
+  height: auto;
+  margin-right: 32px;
   float: left;
+  box-sizing: border-box;
 }
 .material_category .material_category_list {
   border-top: 1px solid #ccc;

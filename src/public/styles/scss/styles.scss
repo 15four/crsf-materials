@@ -28,8 +28,11 @@ html {
   .material_category_header {
     padding: base(2) base(2) base(1);
     img {
-      padding-right: base(1);
+      width: 65px;
+      height: auto;
+      margin-right: base(2);
       float: left;
+      box-sizing: border-box;
     }
   }
 
