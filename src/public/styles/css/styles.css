@@ -1,5 +1,4 @@
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
 *,
 *:after,
 *:before {
@@ -492,14 +491,14 @@ pre, table, fieldset, hr {
 }
 
 html {
-  color: #3a3a3a;
+  color: #000;
   font-size: 16px;
 }
 
 body {
   line-height: 1.8em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-family: helvetica, arial, "sans-serif";
+  font-weight: 400;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -520,10 +519,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 16px;
   text-rendering: optimizeLegibility;
-  color: #4a4a4a;
+  color: #000;
   line-height: 1.1em;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-family: helvetica, arial, "sans-serif";
+  font-weight: 600;
   font-size: 16px;
   font-size: 1rem;
 }
@@ -556,6 +555,30 @@ h5 {
 h6 {
   font-size: 16px;
   font-size: 1rem;
+}
+
+p {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+.material_category_header .material_category_title {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+.material_category_header .material_category_description {
+  font-family: serif;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 16px;
+}
+
+.material_category_list a {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: #000;
+  text-decoration: none;
 }
 
 html {

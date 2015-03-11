@@ -1,6 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700);
+$sans: helvetica, arial, "sans-serif";
+$serif: georgia, serif;
 
-$open-sans: 'Open Sans', sans-serif;
 
 html {
   color: $color-text-base;
@@ -9,7 +9,7 @@ html {
 
 body {
   line-height: 1.8em;
-  @include font($open-sans, $base-font-size, 300);
+  @include font($sans, $base-font-size, 400);
 }
 
 ::selection {
@@ -24,7 +24,7 @@ body {
   text-rendering: optimizeLegibility;
   color:  $color-text-header;
   line-height: 1.1em;
-  @include font($open-sans, 16, 300);
+  @include font($sans, 16, 600);
   &::selection{
     //color: #000;
   }
@@ -37,5 +37,31 @@ $headers: (h1: 48, h2: 40, h3: 32, h4: 28, h5: 22, h6: 16);
   #{$header} {
     @extend %header;
     @include font-size($size);
+  }
+}
+
+//Materials
+p {
+  @include font-size(12);
+}
+
+.material_category_header {
+  .material_category_title {
+    @include font-size(14);
+  }
+
+  .material_category_description {
+    font-family: serif;
+    @include font-size(14);
+    line-height: base(1);
+  }
+}
+
+.material_category_list {
+  a {
+    @include font-size(12);
+    line-height: 20px;
+    color: #000;
+    text-decoration: none;
   }
 }
