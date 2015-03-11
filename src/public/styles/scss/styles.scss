@@ -10,34 +10,8 @@ html {
   background-color: $color-background;
 }
 
-.container {
+.material_container {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
-}
-
-.vertical-align--table {
-  width: 100%;
-  height: 100%;
-  display: table;
-  .vertical-align--table-cell{
-    display: table-cell;
-    vertical-align: middle;
-  }
-}
-
-html, body {
-  height: 100%;
-  text-align: center;
-}
-
-.grid{
-  margin: base(2) 0;
-
-  div {
-    height: base(2);
-    margin-bottom: $gutter-width;
-    background-clip: content-box;
-    background-color: darken($color-background, 12);  
-  }
 }
