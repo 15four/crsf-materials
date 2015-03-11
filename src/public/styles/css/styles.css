@@ -574,9 +574,9 @@ p {
 }
 
 .material_category_list a {
-  font-size: 12px;
-  font-size: 0.75rem;
-  line-height: 20px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 22px;
   color: #000;
   text-decoration: none;
 }
@@ -589,4 +589,34 @@ html {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
+}
+
+.material_category {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 16px 0;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.material_category .material_category_header {
+  padding: 32px 32px 16px;
+}
+.material_category .material_category_header img {
+  padding-right: 16px;
+  float: left;
+}
+.material_category .material_category_list {
+  border-top: 1px solid #ccc;
+  padding: 32px 32px 32px 48px;
+  margin: 0;
+}
+.material_category .material_category_list li {
+  line-height: 16px;
+}
+.material_category .material_category_list li a {
+  -webkit-transition: 0.15s;
+          transition: 0.15s;
+}
+.material_category .material_category_list li a:hover, .material_category .material_category_list li a:active, .material_category .material_category_list li a:focus {
+  text-decoration: underline;
+  color: #FF7812;
 }
