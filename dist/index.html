@@ -117,10 +117,22 @@
 
     </div>
   </div>
-
+  
+  
   
 
     
     <script type="text/javascript" src="public/scripts/scripts.min.js"></script>
+
+    <script> /* Place after Jquery */
+      $(document).ready(function(){
+        $('.material_category').click(function(){
+          $(this).toggleClass('material_category--show');
+        }).find('.material_category_list').click(function(e) {
+          return false;
+        });;
+      });
+    </script> 
+    
   </body>
 </html>

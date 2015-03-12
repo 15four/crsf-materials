@@ -39,29 +39,3 @@ $headers: (h1: 48, h2: 40, h3: 32, h4: 28, h5: 22, h6: 16);
     @include font-size($size);
   }
 }
-
-//Materials
-p {
-  @include font-size(12);
-}
-
-.material_category_header {
-  .material_category_title {
-    @include font-size(14);
-  }
-
-  .material_category_description {
-    font-family: serif;
-    @include font-size(14);
-    line-height: base(1);
-  }
-}
-
-.material_category_list {
-  a {
-    @include font-size(14);
-    line-height: 22px;
-    color: #000;
-    text-decoration: none;
-  }
-}
