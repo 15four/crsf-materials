@@ -22,7 +22,6 @@ html {
   border: 1px solid #ccc;
   border-radius: 6px;
   margin: base(1) 0;
-
   box-shadow: 1px 1px 2px 0 rgba(#000, 0.10);
   
   .material_category_header {
@@ -62,12 +61,6 @@ html {
     &:after {
       transform: rotate(-45deg) translate(3px, 3px); 
     }
-    &.close:before {
-      transform: rotate(45deg);
-    }
-    &.close:after {
-      transform: rotate(-45deg); 
-    }
   }
 
   .material_category_list {    
@@ -75,10 +68,7 @@ html {
     padding: base(2) base(2) base(2) base(3);
     margin:  0;
     
-    display: none;
-    &.material_category_list--show {
-      display: block;
-    }    
+    display: none; 
 
     li {
       line-height: base(1);
@@ -88,7 +78,18 @@ html {
           color: $color-orange;
         }  
       }
-      
+    }
+  }
+
+  &.material_category--show {
+    .material_category_header_icon:before {
+      transform: rotate(45deg);
+    }
+    .material_category_header_icon:after {
+      transform: rotate(-45deg); 
+    }
+    .material_category_list {
+      display: block;
     }
   }
 }

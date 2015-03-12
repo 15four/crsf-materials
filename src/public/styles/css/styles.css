@@ -637,24 +637,11 @@ html {
       -ms-transform: rotate(-45deg) translate(3px, 3px);
           transform: rotate(-45deg) translate(3px, 3px);
 }
-.material_category .material_category_header_icon.close:before {
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.material_category .material_category_header_icon.close:after {
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
 .material_category .material_category_list {
   border-top: 1px solid #ccc;
   padding: 32px 32px 32px 48px;
   margin: 0;
   display: none;
-}
-.material_category .material_category_list.material_category_list--show {
-  display: block;
 }
 .material_category .material_category_list li {
   line-height: 16px;
@@ -665,4 +652,17 @@ html {
 }
 .material_category .material_category_list li a:hover, .material_category .material_category_list li a:active, .material_category .material_category_list li a:focus {
   color: #FF7812;
+}
+.material_category.material_category--show .material_category_header_icon:before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.material_category.material_category--show .material_category_header_icon:after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.material_category.material_category--show .material_category_list {
+  display: block;
 }
