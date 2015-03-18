@@ -47,6 +47,22 @@
   border-radius: 6px;
   margin: base(1) 0;
   box-shadow: 1px 1px 2px 0 rgba(#000, 0.10);
+  
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &.is-open {
+    .material_filter-list {
+      display: block;
+    }
+    .material_filter-header:before {
+      transform: rotate(45deg) translate(2px, -3px);
+    }
+    .material_filter-header:after {
+      transform: rotate(-45deg) translate(-2px, -3px);
+    }
+  }
 
   .material_filter-header {
     position: relative;
@@ -79,6 +95,7 @@
     list-style-type: none;
     padding: base(1) base(1) base(0);
     border-top: 1px solid #ccc;
+    display: none;
 
     a {
       display: block;
