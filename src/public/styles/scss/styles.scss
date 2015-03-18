@@ -39,7 +39,59 @@
   }
 }
 
+.material_filter {
+  display: inline-block;
+  min-width: 160px;
 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: base(1) 0;
+  box-shadow: 1px 1px 2px 0 rgba(#000, 0.10);
+
+  .material_filter-header {
+    position: relative;
+    padding: base(1) base(3) base(0) base(1);  
+    &:before, &:after {
+      display: block;
+      content: "";
+      position: absolute;
+      right: base(1);
+      top: 70%;
+
+      width: 12px;
+      height: 2px;
+      background: #aaa;
+      border-radius: 6px;
+    }
+    &:before {
+      transform: rotate(45deg) translate(-2px, 2px);
+    }
+    &:after {
+      transform: rotate(-45deg) translate(3px, 3px); 
+    }
+  }
+
+  .material_filter_active-filter {
+    color: $color-orange;
+  }
+
+  .material_filter-list {
+    list-style-type: none;
+    padding: base(1) base(1) base(0);
+    border-top: 1px solid #ccc;
+
+    a {
+      display: block;
+      @include font-size(14);
+      line-height: 22px;
+      color: #000;
+      text-decoration: none;
+      &:hover, &:active, &:focus {
+        color: $color-orange;
+      }  
+    }
+  }
+}
 
 .material_category {
   border: 1px solid #ccc;

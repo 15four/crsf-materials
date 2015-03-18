@@ -177,6 +177,59 @@ h6 {
   text-decoration: none;
 }
 
+.material_filter {
+  display: inline-block;
+  min-width: 160px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 16px 0;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.material_filter .material_filter-header {
+  position: relative;
+  padding: 16px 48px 0px 16px;
+}
+.material_filter .material_filter-header:before, .material_filter .material_filter-header:after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 70%;
+  width: 12px;
+  height: 2px;
+  background: #aaa;
+  border-radius: 6px;
+}
+.material_filter .material_filter-header:before {
+  -webkit-transform: rotate(45deg) translate(-2px, 2px);
+      -ms-transform: rotate(45deg) translate(-2px, 2px);
+          transform: rotate(45deg) translate(-2px, 2px);
+}
+.material_filter .material_filter-header:after {
+  -webkit-transform: rotate(-45deg) translate(3px, 3px);
+      -ms-transform: rotate(-45deg) translate(3px, 3px);
+          transform: rotate(-45deg) translate(3px, 3px);
+}
+.material_filter .material_filter_active-filter {
+  color: #FF7812;
+}
+.material_filter .material_filter-list {
+  list-style-type: none;
+  padding: 16px 16px 0px;
+  border-top: 1px solid #ccc;
+}
+.material_filter .material_filter-list a {
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 22px;
+  color: #000;
+  text-decoration: none;
+}
+.material_filter .material_filter-list a:hover, .material_filter .material_filter-list a:active, .material_filter .material_filter-list a:focus {
+  color: #FF7812;
+}
+
 .material_category {
   border: 1px solid #ccc;
   border-radius: 6px;
